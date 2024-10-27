@@ -2,7 +2,7 @@ FROM node:23
 
 WORKDIR /app
 
-COPY ./package*.json ./
+COPY package*.json ./
 
 RUN npm install
 
@@ -10,6 +10,10 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE 3000
+FROM nginx:alpine
 
-CMD [ "npm", "run", "start" ]
+COPY --from=0 /app/dist /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

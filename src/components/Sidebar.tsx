@@ -2,8 +2,8 @@ import React from "react";
 import {
     Home,
     Briefcase,
-    // FolderOpen,
-    Mail,
+    FolderOpen,
+    // Mail,
     FileText,
     Book,
 } from "lucide-react";
@@ -23,9 +23,9 @@ const Sidebar: React.FC<SidebarProps> = ({
     const navItems = [
         { id: "home", icon: Home, label: "Home" },
         { id: "experience", icon: Briefcase, label: "Experience" },
-        // { id: "projects", icon: FolderOpen, label: "Projects" },
+        { id: "projects", icon: FolderOpen, label: "Projects" },
         { id: "academics", icon: Book, label: "Academics" },
-        { id: "contact", icon: Mail, label: "Contact" },
+        // { id: "contact", icon: Mail, label: "Contact" },
         { id: "resume", icon: FileText, label: "Resume" },
     ];
 

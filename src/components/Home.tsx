@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         </a>
       </div>
       <a
-        href="#contact"
+        href="wa.me/5579040682"
         className={`px-6 py-3 rounded-full text-lg font-semibold transition-colors duration-200 ${
           theme === 'dark'
             ? 'bg-blue-600 text-white hover:bg-blue-700'

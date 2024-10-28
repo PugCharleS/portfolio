@@ -104,8 +104,9 @@ const HomeAbout: React.FC = () => {
                         skills and stay up-to-date with the latest industry
                         trends.
                     </p>
-                    <a
-                        href="#contact"
+                    {/* <a
+                        href="wa.me/5579040682"
+                        target="_blank"
                         className={`inline-block px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-colors duration-200 ${
                             theme === "dark"
                                 ? "bg-blue-600 text-white hover:bg-blue-700"
@@ -113,7 +114,7 @@ const HomeAbout: React.FC = () => {
                         }`}
                     >
                         Get in Touch
-                    </a>
+                    </a> */}
                 </div>
             </div>
 
